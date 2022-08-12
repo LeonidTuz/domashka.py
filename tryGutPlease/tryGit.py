@@ -1,19 +1,18 @@
-def number_length(a: int) -> int:
-    count = 0
-    if a == 0:
-        return 1
-    while a > 0:
-        a = a // 10
-        count += 1
-    return count
+def index_power(array: list, n: int) -> int:
+    for i in range(len(array)):
+        while i == n:
+            return array[-1] ** n
+        elif:
+
+
 
 
 print('Example:')
-print(number_length(10))
+print(index_power([1, 2, 3], 2))
 
-assert number_length(10) == 2
-assert number_length(0) == 1
-assert number_length(4) == 1
-assert number_length(44) == 2
+assert index_power([1, 2, 3, 4], 2) == 9
+assert index_power([1, 3, 10, 100], 3) == 1000000
+assert index_power([0, 1], 0) == 1
+assert index_power([1, 2], 3) == -1
 
-print("The mission is done! Click 'Check' to earn cool rewards!")
+print("The mission is done! Click 'Check Solution' to earn rewards!")
