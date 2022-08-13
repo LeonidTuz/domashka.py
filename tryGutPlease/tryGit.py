@@ -1,18 +1,21 @@
-def index_power(array: list, n: int) -> int:
-    for i in range(len(array)):
-        while i == n:
-            return array[-1] ** n
-        elif:
+def checkio(number: int) -> str:
+    if number%3 == 0 and number%5 == 0:
+        return "Fizz Buzz"
+    elif number%3 == 0:
+        return "Fizz"
+    elif number%5 == 0:
+        return "Buzz"
+    else:
+        return str(number)
 
 
 
+print("Example:")
+print(checkio(15))
 
-print('Example:')
-print(index_power([1, 2, 3], 2))
-
-assert index_power([1, 2, 3, 4], 2) == 9
-assert index_power([1, 3, 10, 100], 3) == 1000000
-assert index_power([0, 1], 0) == 1
-assert index_power([1, 2], 3) == -1
+assert checkio(15) == "Fizz Buzz"
+assert checkio(6) == "Fizz"
+assert checkio(10) == "Buzz"
+assert checkio(7) == "7"
 
 print("The mission is done! Click 'Check Solution' to earn rewards!")
